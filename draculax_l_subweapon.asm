@@ -1,32 +1,39 @@
 lorom
 
-; Original at $849151:
-;   jsl $848679
-;
-; Replace it with a jump to our code.
-org $849151
-    autoclean jml remap_subweapon_button
+; Hijack the common input-to-action-index helper.
+; Original helper begins at $848679.
+org $848679
+    autoclean jml remap_subweapon_helper
 
 freecode
 
-remap_subweapon_button:
-    ; If L was newly pressed, use the subweapon.
+remap_subweapon_helper:
+    ; L newly pressed?
+    ; You confirmed this appears as $28 bit $0010.
     lda $28
     bit #$0010
-    bne .use_subweapon
+    bne .l_subweapon
 
-    ; Otherwise run the original input helper.
-    jsl $848679
+    ; Original helper logic:
+    lda $9c
+    lsr
+    lsr
+    lsr
+    and #$001e
+    cmp #$0010
+    bcc .after_clamp
+    lda #$0010
 
-    ; If the original result was Up+Y/subweapon,
-    ; replace it with Y-only behavior instead.
-    cmp #$000C
-    bne .continue_normally
-
+.after_clamp:
+    ; Original Up+Y gives helper result $000C.
+    ; Replace that with normal Y result $0004.
+    cmp #$000c
+    bne .return
     lda #$0004
+    rtl
 
-.continue_normally:
-    jml $849155
+.l_subweapon:
+    lda #$000c
 
-.use_subweapon:
-    jml $8491A6
+.return:
+    rtl
