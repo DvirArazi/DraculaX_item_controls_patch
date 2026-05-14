@@ -1,3 +1,6 @@
-*
-!.gitignore
-!draculax_l_subweapon.asm
+.agents/
+.codex/
+asar/
+bsnes-plus/
+Castlevania - Dracula X (USA) copy.sfc
+Castlevania - Dracula X (USA).sfc
