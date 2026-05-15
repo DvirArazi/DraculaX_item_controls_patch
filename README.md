@@ -1,8 +1,8 @@
-# Dracula X L-Button Subweapon Patch
+# Dracula X L-Button Sub-Weapon Patch
 
 ## Overview
 
-ROM hack for **Castlevania: Dracula X** on the SNES that changes subweapon throw from `Up + Y` to `L`.
+ROM hack for **Castlevania: Dracula X** on the SNES that changes sub-weapon throw from `Up + Y` to `L`.
 
 ## How to Apply the Patch
 
@@ -40,11 +40,11 @@ To create a distributable `.bps` patch afterward, use Floating IPS:
 
 ## Motivation
 
-In the original game, subweapons are used with `Up + Y`.
+In the original game, sub-weapons are used with `Up + Y`.
 
-This can be awkward on stairs since pressing `Up` affects the player's facing direction. As a result using a subweapon when facing the decending direction of the stairs is unreliable.
+This can be awkward on stairs since pressing `Up` affects the player's facing direction. As a result using a sub-weapon when facing the decending direction of the stairs is unreliable.
 
-This patch moves subweapon usage to the unused `L` button to mitigate this.\
+This patch moves sub-weapon usage to the unused `L` button to mitigate this.\
 
 ## Technical Notes
 
@@ -73,7 +73,7 @@ Up held         = $0800
 L newly pressed = $0010
 ```
 
-The original `Up + Y` subweapon input maps to helper result:
+The original `Up + Y` sub-weapon input maps to helper result:
 
 ```text
 $000C
@@ -89,7 +89,7 @@ The patch changes the helper behavior so that:
 
 ```c
 if (L was newly pressed) {
-    return 0x000C; // subweapon action
+    return 0x000C; // sub-weapon action
 }
 
 if (the helper result is 0x000C
