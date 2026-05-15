@@ -6,7 +6,7 @@ ROM hack for **Castlevania: Dracula X** on the SNES that changes sub-weapon thro
 
 ## How to Apply the Patch
 
-Use a patching tool such as [Marc Robledo's Rom Patcher JS]([https://www.romhacking.net/utilities/1040/](https://www.marcrobledo.com/RomPatcher.js/)).
+Use a patching tool such as [Marc Robledo's Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/).
 
 1. Open Rom Patcher JS.
 2. Under **ROM file**, choose your clean original ROM.
