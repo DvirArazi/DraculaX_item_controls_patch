@@ -108,4 +108,4 @@ The patch was developed and tested using:
 - bsnes-plus
 - RetroArch cheat search
 - Asar
-- Floating IPS
+- Marc Robledo's Rom Patcher JS
