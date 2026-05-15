@@ -27,8 +27,8 @@ This patch is written for **Asar**.
 
 To apply the ASM patch manually:
 ```bash
-cp "Castlevania - Dracula X (USA).sfc" "Castlevania - Dracula X (USA) [patched].sfc"
-asar draculax_l_subweapon.asm "Castlevania - Dracula X (USA) [patched].sfc"
+cp "Castlevania - Dracula X (USA).sfc" "Castlevania - Dracula X (USA) (patched).sfc"
+asar draculax_r_subweapon.asm "Castlevania - Dracula X (USA) (patched).sfc"
 ```
 
 To create a distributable `.bps` patch afterward, use Floating IPS:
@@ -70,7 +70,7 @@ The relevant button values are:
 ```text
 Y newly pressed = $4000
 Up held         = $0800
-L newly pressed = $0010
+R newly pressed = $0010
 ```
 
 The original `Up + Y` sub-weapon input maps to helper result:
