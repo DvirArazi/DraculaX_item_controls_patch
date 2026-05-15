@@ -10,7 +10,7 @@ remap_subweapon_helper:
     ; Use combined newly-pressed input instead of raw $28.
     lda $2e
     bit #$0010
-    bne .l_subweapon
+    bne .r_subweapon
 
     ; Original helper logic:
     lda $9c
