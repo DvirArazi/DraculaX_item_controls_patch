@@ -42,9 +42,9 @@ To create a distributable `.bps` patch afterward, use Floating IPS:
 
 In the original game, sub-weapons are used with `Up + Y`.
 
-This can be awkward on stairs since pressing `Up` affects the player's facing direction. As a result using a sub-weapon when facing the decending direction of the stairs is unreliable.
+This can be awkward on stairs since pressing `Up` affects the player's facing direction, which makes using a sub-weapon when facing the descending direction of the stairs unreliable.
 
-This patch moves sub-weapon usage to the unused `L` button to mitigate this.\
+This patch moves sub-weapon usage to the unused `L` button to mitigate this.
 
 ## Technical Notes
 
