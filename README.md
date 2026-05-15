@@ -6,12 +6,12 @@ ROM hack for **Castlevania: Dracula X** on the SNES that changes sub-weapon thro
 
 ## How to Apply the Patch
 
-Use a patching tool such as [Floating IPS](https://www.romhacking.net/utilities/1040/).
+Use a patching tool such as [Marc Robledo's Rom Patcher JS]([https://www.romhacking.net/utilities/1040/](https://www.marcrobledo.com/RomPatcher.js/)).
 
-1. Open Floating IPS.
-2. Choose **Apply Patch**.
-3. Select the `.bps` patch file from this repository.
-4. Select your clean original ROM.
+1. Open Rom Patcher JS.
+2. Under **ROM file**, choose your clean original ROM.
+3. Under **Patch file**, choose the `.bps` patch file from this repository.
+4. Click **Apply patch**.
 5. Save the patched ROM.
 6. Load the patched ROM in your emulator.
 
