@@ -6,7 +6,7 @@ org $848679
 freecode
 
 remap_subweapon_helper:
-    ; L newly pressed?
+    ; R newly pressed?
     ; Use combined newly-pressed input instead of raw $28.
     lda $2e
     bit #$0010
