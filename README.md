@@ -2,9 +2,7 @@
 
 ## Overview
 
-This is a ROM hack for **Castlevania: Dracula X** on the SNES.
-
-It changes subweapon usage from `Up + Y` to `L`.
+ROM hack for **Castlevania: Dracula X** on the SNES that changes subweapon throw from `Up + Y` to `L`.
 
 ## How to Apply the Patch
 
